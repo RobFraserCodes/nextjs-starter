@@ -48,7 +48,7 @@ export default function NewsletterCTA() {
             <div className="mt-6">
                 <form 
                     onSubmit={(e) => e.preventDefault()}
-                    className="items-center justify-center sm:flex space-y-4">
+                    className="flex-col items-center justify-center sm:flex space-y-4">
                     <Input 
                         type="email"
                         placeholder="Enter your email"
