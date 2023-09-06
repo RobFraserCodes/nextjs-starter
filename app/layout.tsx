@@ -1,4 +1,5 @@
 import './globals.css'
+import { ThemeProvider } from '@/components/theme-provider'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { siteDetails } from '@/lib/site-details'
@@ -16,8 +17,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-background'>
-      <body className={inter.className}>{children}</body>
+    <html lang="en">
+      <body className={inter.className}>
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          {children}  
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

@@ -7,6 +7,7 @@ import { Button } from './ui/button'
 import { Bars3Icon, XMarkIcon, Squares2X2Icon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { siteDetails } from '@/lib/site-details'
+import { ModeToggle } from './theme-toggle'
 
 export default function Navbar() {
     const [state, setState] = useState(false)
@@ -51,7 +52,7 @@ export default function Navbar() {
                         }
                         <span className='hidden w-px h-6 bg-gray-300 md:block'></span>
                         <div className='items-center gap-x-6 md:flex md:space-y-0 md:gap-x-2'>
-                            
+                            <ModeToggle />
                             <Link href="/login">
                                 <Button className='w-full mb-4 md:mb-0 text-white'>
                                     Log in
