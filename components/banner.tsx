@@ -21,13 +21,13 @@ export default function Banner() {
                     </div>
                     <div className="font- text-sm ">
                         We just launched a new version of our library!&nbsp;
-                        <Link href="/" className=" underline duration-150 hover:text-accent inline-flex items-center gap-x-1">
+                        <Link href="/" className=" underline duration-150 hover:text-accent-foreground inline-flex items-center gap-x-1">
                             Learn more <ArrowSmallRightIcon className="w-4 h-4" />
                         </Link>
                     </div>
                 </div>
                 <Button 
-                    variant={"secondary"}
+                    variant={"ghost"}
                     onClick={() => setIsVisible(false)}
                 >
                     <XMarkIcon className="w-5 h-5" />

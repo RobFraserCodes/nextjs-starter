@@ -15,7 +15,7 @@ export default function Hero() {
                             height={774}
                         />
                     </div>
-                    <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl">
+                    <div className="max-w-xl px-4 space-y-3 mt-6 sm:px-0 md:mt-0 lg:max-w-2xl py-8 md:py-0">
                         <h3 className="text-primary font-semibold uppercase">
                             Build your SaaS solution
                         </h3>

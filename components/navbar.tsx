@@ -41,7 +41,7 @@ export default function Navbar() {
                         {
                             navigation.map((item, idx) => {
                                 return (
-                                    <li key={idx} className="text-gray-700 hover:text-indigo-600">
+                                    <li key={idx} className="text-gray-700 hover:text-primary">
                                         <Link href={item.path} className="block uppercase">
                                             {item.title}
                                         </Link>
@@ -53,7 +53,7 @@ export default function Navbar() {
                         <div className='items-center gap-x-6 md:flex md:space-y-0 md:gap-x-2'>
                             
                             <Link href="/login">
-                                <Button className='w-full mb-4 md:mb-0'>
+                                <Button className='w-full mb-4 md:mb-0 text-white'>
                                     Log in
                                 </Button>
                             </Link>
