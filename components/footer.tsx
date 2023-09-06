@@ -13,11 +13,12 @@ export default function Footer() {
         <footer className="pt-8 bg-foreground">
             <div className="max-w-screen-xl mx-auto px-4 text-background :px-8">
                 <div className="space-y-6 sm:max-w-md sm:mx-auto sm:text-center">
-                    <Image 
+                    {/* Add Logo Image if needed */}
+                    {/* <Image 
                         alt=""
                         src=""
                         className="w-32 sm:mx-auto" 
-                    />
+                    /> */}
                     <Squares2X2Icon className="mx-auto h-12 w-12 text-primary" aria-hidden="true" />
                     <h1>{siteDetails.title}</h1>
                     <p>

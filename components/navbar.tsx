@@ -24,7 +24,7 @@ export default function Navbar() {
                         /> */}
                         <div className='flex items-center space-x-2'>
                         <Squares2X2Icon className="w-8 h-8 text-gray-900" />
-                        <h3>{siteDetails.title}</h3>
+                        <h3 className='hidden xl:flex'>{siteDetails.title}</h3>
                         </div>
                     </a>
                     <div className="md:hidden">
@@ -53,6 +53,7 @@ export default function Navbar() {
                         <span className='hidden w-px h-6 bg-gray-300 md:block'></span>
                         <div className='items-center gap-x-6 md:flex md:space-y-0 md:gap-x-2'>
                             <ModeToggle />
+
                             <Link href="/login">
                                 <Button className='w-full mb-4 md:mb-0 text-white'>
                                     Log in
