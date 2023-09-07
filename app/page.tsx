@@ -4,6 +4,7 @@ import Footer from '@/components/footer'
 import Hero from '@/components/hero'
 import Navbar from '@/components/navbar'
 import NewsletterCTA from '@/components/newsletter'
+import Pricing from '@/components/pricing'
 import Image from 'next/image'
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <CTA />
       <NewsletterCTA />
+      <Pricing />
       <Footer />
     </main>
   )

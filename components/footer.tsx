@@ -35,7 +35,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="flex py-8 mt-8 border-t border-white/10 items-center justify-between sm:flex text-sm font-thin">
-                    <p>© {currentYear} {siteDetails.title}. Built by <Link href="http://www.robfraser.dev">RobFraser.dev</Link> and open-sourced on <Link href="">GitHub</Link>.</p>
+                    <p>© {currentYear} {siteDetails.title}. Built by <Link href="http://www.robfraser.dev"><span className="font-medium">RobFraser.dev</span></Link> and open-sourced on <Link href="https://github.com/RobFraserCodes/nextjs-starter"><span className="font-medium">GitHub</span></Link>.</p>
                     <ul className="flex flex-wrap items-center gap-4 mt-6 sm:text-sm sm:mt-0">
                         { footerNavs.map((item, idx) => (
                             <li key={idx}

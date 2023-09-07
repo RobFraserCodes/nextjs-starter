@@ -1,12 +1,10 @@
 export const navigation = [
-    { title: "Features", path: "#)" },
-    { title: "Integrations", path: "#)" },
-    { title: "Customers", path: "#)" },
-    { title: "Pricing", path: "#)" }
+    { title: "Documentation", path: "/documentation" },
+    { title: "Components", path: "/components" },
 ];
 
 export const footerNavs = [
     { title: 'Terms', path: '#' },
-    { title: 'Terms', path: '#' },
-    { title: 'Terms', path: '#' },
+    { title: 'Conditions', path: '#' },
+    { title: 'Sitemap', path: '#' },
 ]

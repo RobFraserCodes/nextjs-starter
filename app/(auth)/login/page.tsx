@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef, use } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { siteDetails } from '@/lib/site-details';
-import { PlayCircleIcon } from '@heroicons/react/24/solid';
+import { ArrowUturnLeftIcon } from '@heroicons/react/24/solid';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import {
@@ -44,29 +44,25 @@ export default function UserLoginPage() {
         <div className="relative flex h-32 items-end bg-gray-400 lg:col-span-5 lg:h-full xl:col-span-6">
 
             <div className="absolute inset-0 h-full w-full">
-            <Image
+            {/* <Image
                 alt=""
                 src="https://unsplash.com/photos/RmoWqDCqN2E"
                 className="absolute inset-0 h-full w-full object-cover"
                 width={870}
                 height={1110}
                 priority
-            />
+            /> */}
             <div
-                className="absolute inset-0 bg-gradient-to-t from-gray-900 to-gray-900/20"
+                className="absolute inset-0 bg-gradient-to-t from-primary to-primary-foreground mix-blend-multiply"
                 aria-hidden="true"/>
             </div>
 
-        {/* Logo */}
+        {/* Return to Home */}
         <div className="absolute top-8 left-8 text-white">
             <Link className="block" href="/">
-                <div className='flex items-center'>
                     <span className="sr-only">Home</span>
-                    <PlayCircleIcon className="h-8 w-8 text-gray-100" />
-                    <h1 className='ml-2 text-xl font-bold text-gray-100 sm:text-3xl uppercase'>{siteDetails.title}</h1>
-                </div>
+                    <ArrowUturnLeftIcon className="h-8 w-8 text-gray-100" />
             </Link>
-            <div className='font-thin'>{siteDetails.description}</div>
         </div>
 
         <div className="hidden lg:relative lg:block lg:p-12">
