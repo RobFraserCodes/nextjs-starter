@@ -26,9 +26,9 @@ export default function Footer() {
                     </p>
                     <div className="items-center gap-x-3 space-y-3 sm:flex sm:justify-center sm:space-y-0 space-x-4">
                         <Link href="/">
-                            <Button className="text-white">Get started</Button>
+                            <Button className="text-white">Get In Touch</Button>
                         </Link>
-                        <Link href="/">
+                        <Link href="/documentation">
                             <Button variant={"outline"}>Documentation <ArrowRightIcon className="w-4 h-4 ml-2" />
                             </Button>
                         </Link>
